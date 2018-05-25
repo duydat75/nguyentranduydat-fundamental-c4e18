@@ -1,0 +1,26 @@
+from turtle import *
+speed(0)
+shape("classic") 
+color("red")
+right (22.5)
+for i in range (2):
+    forward (100)
+    left (45)
+    forward (100)
+    left (135)
+    forward (100)
+    left (45)
+    forward (100)
+    right (135)
+    forward (100)
+    left (45)
+    forward (100)
+    left (135)
+    forward (100)
+    left (45)
+    forward (100)
+    right (135)
+left (135)    
+
+    
+mainloop()
