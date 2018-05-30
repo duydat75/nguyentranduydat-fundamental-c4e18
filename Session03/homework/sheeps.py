@@ -1,7 +1,6 @@
 flock = [5,7,300,90,24,50,75]
 print ("Hello my name is Hiep and here is my flock: \n",flock)
 size_max = 0
-a=0
 total = 0
 size_max = max(flock)
 update = flock.index(size_max)
