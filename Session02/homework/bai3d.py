@@ -6,7 +6,7 @@ for i in range(10):
     if(i % 2 == 1):
         string = string[::-1]
     print (string)       
-n =int (input("Nhap so n: "))
+n =int (input("Input n: "))
 for i in range(n):
     string = ""
     for j in range(n):

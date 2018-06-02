@@ -1,6 +1,6 @@
 from turtle import *
 shape("classic")
-speed("0")
+speed(5)
 colors = ['red','blue','brown','yellow','gray']
 for i in range (3,8):
     color (colors[i-3])
