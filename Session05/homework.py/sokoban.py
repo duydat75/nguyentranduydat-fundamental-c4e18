@@ -10,7 +10,7 @@ player = {
 }
 boxes = [
     {"x":2,"y":2},
-    {"x":4,"y":7},
+    {"x":7,"y":8},
     {"x":8,"y":3}]
 destinations = [
     {"x":5,"y":5},
@@ -22,10 +22,24 @@ walls = [
     {"x":6,"y":7},
     {"x":6,"y":2},
     {"x":2,"y":8},
-    {"x":8,"y":6}
+    {"x":8,"y":6},
+    {"x":2,"y":7},
+    {"x":2,"y":6},
+    {"x":1,"y":6},
+    {"x":0,"y":6},
+    {'x':3,'y':4},
+    {'x':3,'y':3},
+    {'x':3,'y':2},
+    {'x':4,'y':2},
+    {'x':5,'y':2},
+    {'x':6,'y':8},
+    {'x':6,'y':9}
 ]
 fruit = {'x':0,'y':7}
 ######################
+# O LÀ FRUIT 
+# ĂN FRUIT ĐỂ ĐI XUYÊN TƯỜNG
+
 playing = True
 nghia = False
 while playing:
@@ -41,7 +55,7 @@ while playing:
                     pic = 'B '
             for wall in walls:
                 if wall["x"] == x and wall['y'] ==y:
-                    pic = "| "
+                    pic = "* "
             if x==fruit['x'] and y==fruit['y']:
                 pic = 'O '
             if x==player["x"] and y==player["y"] :
