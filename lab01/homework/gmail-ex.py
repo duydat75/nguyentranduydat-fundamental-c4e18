@@ -13,7 +13,7 @@ html_content="""
 <p>Duy Đạt handsome.</p>
 """
 #placeholder 
-for i in range (10):
+for i in range (365):
     while True:
         now = datetime.datetime.now()
         moment = now.replace(hour=7)
