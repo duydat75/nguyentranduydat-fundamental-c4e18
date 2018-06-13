@@ -22,7 +22,7 @@ for i in range (365):
             reason = choice(mylist)
             html_content_to_sent = html_content.replace("{{abc}}", reason)
 
-            msg=Message('Hello mother fucker',to='20130075@student.hust.edu.vn',
+            msg=Message('Hello mother fucker',to='applect9@gmail.com',
                             html=html_content_to_sent)
             gmail.send(msg)
             break
