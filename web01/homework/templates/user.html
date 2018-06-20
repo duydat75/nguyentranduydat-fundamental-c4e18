@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    {% if username in users %}
+    <h3>Name: {{ users[username]['name'] }}</h3>
+    <p>Age: {{ users[username]['age'] }}</p>
+    <p>Hobbies: {{ users[username]['hobbies'] }}</p>
+    <p>Gender: {{ users[username]['gender']}}</p>
+    {% else %}
+    <h3>User not found</h3>
+    {% endif %}
+</body>
+</html>

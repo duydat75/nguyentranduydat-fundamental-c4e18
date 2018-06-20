@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Văn hoá nghệ thuật</h1>
+    {% for p in post %}
+        <h2>{{ p.title }}</h2>
+        <i>By: {{ p.author }}</i>
+        <p>{{ p.content }}</p>
+    {% endfor %}
+</body>
+</html>
