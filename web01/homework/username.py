@@ -20,7 +20,7 @@ def bimcalc(username):
                 'gender': 'Gay'
         }
     }
-    return render_template("user.html", username = username, users = users)
+    return render_template("user.html", users = users, username=username)
 
 if __name__ == '__main__':
   app.run (debug=True)

@@ -8,7 +8,8 @@
 </head>
 <body>
     {% if username in users %}
-    <h3>Name: {{ users[username]['name'] }}</h3>
+    <h2>Hello {{username}}</h2>
+    <p>Name: {{ users[username]['name'] }}</p>
     <p>Age: {{ users[username]['age'] }}</p>
     <p>Hobbies: {{ users[username]['hobbies'] }}</p>
     <p>Gender: {{ users[username]['gender']}}</p>
