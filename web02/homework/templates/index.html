@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+</head>
+<body>
+    <h1>Warm Winter</h1>
+    {%for customer in all_customer[2:]%}
+    <div>
+        <img src="../static/tuananh.jpg" alt=''>
+        <p>Name : {{ customer.name }}</p>
+        <p>Gender : {{ customer.gender }}</p>
+        <p>Email : {{ customer.email }}</p>
+        <p>Phone number : {{ customer.phone }}</p>
+        <p>Job : {{ customer.job }}</p>
+        <p>Company : {{ customer.company }}</p>
+        <hr>
+    </div>
+    {%endfor%}
+</body>
+</html>

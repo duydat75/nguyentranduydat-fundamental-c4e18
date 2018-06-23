@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>SEA FOOD</h1>
+    {% for service in all_service %}
+    <div>
+    
+        <p>Name: {{service.name}}</p>
+        <p>YOB: {{service.yob}}</p>
+        <p>Gender: {{service.gender}}</p>
+
+        {% if service.gender == 0%}
+        <img src="../static/image/female.jpg" alt=''>
+
+        {% else %}
+        <img src="../static/image/male.jpg" alt=''>
+        {%endif%}
+
+        <p>Height: {{service.height}}</p>
+        <p>Address: {{service.address}}</p>
+        <hr>
+    </div>
+    {% endfor %}
+</body>
+</html>
