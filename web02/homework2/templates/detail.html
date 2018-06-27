@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    {% if id_to_get.gender == 0%}
+    <img src="../static/35238259_609902652724072_7388347023415574528_o.jpg" alt=''>
+
+    {% else %}
+    <img src="../static/images_xvtd.jpg" alt=''>
+    {%endif%}
+
+    <H1>{{id_to_get.name}}</H1>
+    <br><br>
+    <b>Năm sinh: {{id_to_get.yob}}</b>
+    <br><br>
+    <b>Cao: {{id_to_get.height}}</b>
+    <br><br>
+    <b>Số điện thoại: {{id_to_get.phone}}</b>
+    <br><br>
+    <b>Địa chỉ: {{id_to_get.address}}</b>
+    <br><br>
+    <b>Mô tả: {{id_to_get.description}}</b>
+    <br><br>
+    <b>Số đo 3 vòng: {{id_to_get.measurements}}</b>
+
+</body>
+</html>

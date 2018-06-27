@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ADMIN</title>
+</head>
+<body>
+    <h1>Admin playground</h1>
+    <table border="1px">
+        
+        <thead>
+            <th>STT</th>
+            <th>Name</th>
+            <th>Yob</th>
+            <th>Gender</th>
+            <th>Height</th>
+            <th>Phone number</th>
+            <th>Address</th>
+            <th>Description</th>
+            <th>Measurements</th>
+            <th>Edit</th>
+        </thead>
+        <tbody>
+            {%for service in all_service%}
+            <tr>
+               
+                <td>{{ loop.index }}</td>
+                
+                <td>{{service.name}}</td>
+                <td>{{service.yob}}</td>
+                <td>
+                {% if service.gender == 1%}
+                Male
+                {% else %}
+                Female
+                {%endif%}
+                </td>
+                <td>{{service.height}}</td>
+                <td>{{service.phone}}</td>
+                <td>{{service.address}}</td>
+                <td>{{service.description}}</td>
+                <td>{{service.measurements}}</td>
+                </td>
+                <td>
+                    <a href="{{ url_for('update', service_id = service.id) }}"> 
+                        <button type='button'>Sua</button>
+                    </a>
+                
+                    <a href="{{ url_for('delete', service_id=service.id) }}">
+                        <button type='button'>Xoa</button>
+                    </a>
+                    
+                    <a href="{{ url_for('new_service') }}">
+                        <button type="button">Them</button>
+                    </a>
+                </td>
+    
+            </tr>
+            {%endfor%}
+        </tbody>
+    </table>
+</body>
+</html>

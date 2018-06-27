@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Edit service</h1>
+    <form method="post">
+        <label>Name</label>
+        <br>
+        <input type="text" name="name" value="{{id_to_get.name}}">
+        <br>
+        <label>Height</label>
+        <br>
+        <input type="text" name="height" value="{{id_to_get.height}}">
+        <br>
+        <label>Yob</label>
+        <br>
+        <input type="text" name="yob" value="{{id_to_get.yob}}">
+        <br>
+        <label>Phone</label>
+        <br>
+        <input type="text" name="phone" value="{{id_to_get.phone}}">
+        <br>
+        <label>Address</label>
+        <br>
+        <input type="text" name="address" value="{{id_to_get.address}}">
+        <br>
+        <label>Gender</label>
+        <br>
+        {% if id_to_get.gender == 0 %}
+            <label><input type="radio" name="gender" value="1">Male</label>
+            <label><input type="radio" name="gender" value="0" checked>Female</label>
+        {% else %}
+            <label><input type="radio" name="gender" value="1" checked>Male</label>
+            <label><input type="radio" name="gender" value="0" >Female</label>
+        {% endif %}
+          <br>
+        <label>Description</label>
+        <br>
+        <input type="text" name="description" value="{{id_to_get.description}}">
+        <br>
+        <label>Measurements</label>
+        <br>
+        <input type="text" name="measurements" value="{{id_to_get.measurements}}">
+        <br>
+        <button type = "Submit"> Submit</button>
+    </form>
+</body>
+</html>
