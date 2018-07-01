@@ -70,11 +70,34 @@ def update(service_id):
                             set__height=form['height'],
                             set__phone=form['phone'],
                             set__description=form['description'],
-                            set__measurements=form['measurements']
+                            set__measurements=form['measurements'],
+                            set_avatar=form['avatar']
         )
         id_to_get.reload()
         return redirect(url_for('admin'))    
 
+@app.route('/sign-in', methods=['GET','POST'])
+def signin():
+    if request.method =='GET':
+        return render_template('signin.html')
+    elif request.method == 'POST':
+        form = request.form
+        fullname = form['username']
+        email = form['email']
+        username = form['username']
+        password = form['password']
+        if fullname == '' or email == '' or username =='' or password =='':
+            return render_template('signin.html') + "Registered failed"
+        else:
+            new_user = User(
+                fullname= fullname,
+                email = email,
+                username = username,
+                password = password
+            )
+            new_user.save()
+            return render_template('signin.html') + "Registered successfully"
+    
 
 @app.route('/')
 def index():
@@ -82,4 +105,4 @@ def index():
 
 if __name__ == '__main__':
   app.run(debug=True)
- 
+

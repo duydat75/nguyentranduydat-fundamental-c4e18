@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>SEA FOOD</h1>
+    <br>
+    <a href="{{ url_for('logout')}}"> 
+            <button type='button'>Log out</button>
+    {% for service in all_service %}
+    <div>
+        <p>{{service.name}}</p>
+        <p>{{service.yob}}</p>
+        <p>{{service.height}}</p>
+        <a href="{{ url_for('detail', service_id=service.id) }}">Chi tiết</a>
+        <hr>
+    </div>
+    {% endfor %}
+</body>
+</html>

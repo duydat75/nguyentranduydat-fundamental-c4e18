@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSM WEB</title>
+</head>
+<body>
+    <h1>CSM APP</h1>
+    <a href="{{ url_for('admin')}}">Admin</a>
+    <br>
+
+    <br><hr><br>
+    {% for video in videos %}
+    <div>
+        <img src="{{video.thumbnail}}" alt="" width="100px" height="100px">
+        <p>{{video.title}}</p>
+        <b>Views: {{video.views}}</b>
+        <br>
+        <a href="{{ url_for('detail', youtube_id = video.youtubeid) }}">Xem</a>
+        
+    </div>
+    {%endfor%}
+</body>
+</html>

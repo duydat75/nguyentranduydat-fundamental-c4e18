@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Admin playground</h1>
-    <table border="1px">
+    <table border="3px">
         
         <thead>
             <th>STT</th>
@@ -20,6 +20,7 @@
             <th>Address</th>
             <th>Description</th>
             <th>Measurements</th>
+            <th>Avatar</th>
             <th>Edit</th>
         </thead>
         <tbody>
@@ -42,23 +43,25 @@
                 <td>{{service.address}}</td>
                 <td>{{service.description}}</td>
                 <td>{{service.measurements}}</td>
-                </td>
+                <td><img src="{{service.avatar}} " width="200px" height="200px"></td>
                 <td>
                     <a href="{{ url_for('update', service_id = service.id) }}"> 
                         <button type='button'>Sua</button>
                     </a>
-                
                     <a href="{{ url_for('delete', service_id=service.id) }}">
                         <button type='button'>Xoa</button>
-                    </a>
-                    
-                    <a href="{{ url_for('new_service') }}">
-                        <button type="button">Them</button>
                     </a>
                 </td>
     
             </tr>
             {%endfor%}
+            <a href="{{ url_for('new_service') }}">
+                <button type="button" style="height:50px;width:50px">Thêm</button>
+            </a>
+            <br>
+            <a href="{{ url_for('orderpage')}}">
+                <button type="button" style="height:50px;width:100px">Yêu cầu dịch vụ</button>
+            </a>
         </tbody>
     </table>
 </body>

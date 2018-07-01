@@ -1,5 +1,5 @@
 from mongoengine import *
-
+import static
 
 
 
@@ -15,3 +15,4 @@ class Service(Document):
     address = StringField()
     description = StringField()
     measurements = StringField()
+    avatar = FileField()
