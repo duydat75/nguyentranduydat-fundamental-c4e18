@@ -134,7 +134,7 @@
     font-size: 65%;
 }
 .box6{
-    height: 350px;
+    height: 330px;
     width: 720px;
     background-image: url('images/header.jpg');
     background-size: cover;
@@ -146,7 +146,7 @@
     align-items: center;
     background-color: white;
     height: 40px;
-    width: 190px;
+    width: 170px;
     margin-top: 220px;
 }
 
@@ -156,7 +156,7 @@
     align-items: center;
     background-color: black;
     height: 30px;
-    width: 330px;
+    width: 310px;
 }
 .text-white{
     color: white;
@@ -167,7 +167,7 @@
 .box9{
     background-color: rgb(160, 235, 208);
     display: flex;
-    height: 75px;
+    height: 70px;
     width: 720px;
 }
 .box9-1{
@@ -312,7 +312,7 @@
 }
 
 .motherbox{
-    margin-top: 150px;
+    margin-top: 160px;
     height: 50px;
     width: 900px;
     margin-left: 20%;
