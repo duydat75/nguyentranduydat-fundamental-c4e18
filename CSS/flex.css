@@ -1,0 +1,27 @@
+.bg-gray{
+    background-color: gray;
+}
+
+.bg-green{
+    background-color: green;
+}
+
+.w-100px{
+    width: 100px;
+}
+
+.h-100px{
+    height: 100px;
+}
+
+.m-10px{
+    margin: 10px;
+}
+#flex-box{
+    display: flex;
+    flex-flow: row-reverse wrap;
+    height: 500px;
+    align-items: flex-end;
+    justify-content: 
+    
+}

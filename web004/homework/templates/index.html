@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Xin chào ạ</title>
+    {% include 'meta-data.html' %}
 </head>
 <body>
-    <h1>Mua dong khong lanh</h1>
-    <a href = "{{ url_for('search')}}"> Cham vao em di </a>
+    {% include 'homepage/navigation.html' %}
+    {% include 'homepage/carousel.html' %}
+    <a href = "{{ url_for('search')}}">Hãy chạm vào em đi</a>
     <hr>
-    <a href = "{{ url_for('admin')}}"> Hay cham vao admin di </a>
+    <a href = "{{ url_for('admin')}}">Hãy chạm vào admin đi</a>
 </body>
 </html>

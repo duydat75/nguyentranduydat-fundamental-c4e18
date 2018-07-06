@@ -1,0 +1,131 @@
+.fartherbox{
+    height: 680;
+    width: 750;
+    margin: 0 20%;
+}
+.box1{
+    background-color: lightcoral;
+    width: 100px;
+    height: 75px;
+}
+.box2{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly; 
+    background-color: teal;
+    margin-top: 20px;
+    height: 150px;
+    width: 100px;
+}
+.box3{
+    background-color: aquamarine;
+    height: 12px;
+    width: 100px;   
+}
+.box4{
+    margin-top:45px;
+    background-color: gray;
+    height: 150px;
+    width: 100px;
+}
+.box5{
+    margin-top:15px;
+    background-color: gray;
+    height: 150px;
+    width: 100px;
+}
+.d-inline-block{
+    display: inline-block;
+}
+.bigbox1{
+    height: 600px;
+    width: 100px;
+}
+.bigbox2{
+    background-color:white;
+    margin-left:10px;
+    height: 650px;
+    width: 640px;
+}
+.d-flex{
+    display: flex;
+}
+.box6{
+    height: 350px;
+    width: 640px;
+    background-color: rgb(47, 255, 116);
+    display: inline-block;
+}
+.box7{
+    background-color: white;
+    height: 30px;
+    width: 140px;
+    margin-left: 500px;
+    margin-top: 150px;
+}
+.box8{
+    background-color: black;
+    height: 30px;
+    width: 250px;
+    margin-left:390px;
+}
+.box9{
+    display: flex;
+    height: 70px;
+    width: 640px;
+    background-color:rgb(47, 255, 116);
+    margin-top: 70px;
+    justify-content: space-between;
+}
+.box10{
+    background-color: green;
+    height: 70px;
+    width: 155px;
+}
+.box12{
+    background-color: lightcoral;
+    height: 30px;
+    width: 640px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.box11{
+    background-color: lightskyblue;
+    width: 400px;
+    height: 30px;
+    display: inline-block;
+}
+.box13{
+    margin-top:20px;
+    height: 240px;
+}
+.box14{
+    background-color:white;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.box15{
+    background-color: rgb(184, 221, 17);
+    height: 80px;
+    width: 150px;
+}
+
+.box16{
+    margin-top: 10px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.box17{
+    background-color: lightsalmon;
+    height: 150px;
+    width: 150px;
+}
+
+.box18{
+    background-color: gray;
+    width: 750px;
+    height: 50px;
+    margin-left: 20%;
+}

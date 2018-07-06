@@ -1,0 +1,78 @@
+.bg-1{
+    background-image: url('https://www2.postojnska-jama.eu/assets/Za-pustolovce/Pivka-in-Crna-jama/20140812-Pivka-22.JPG');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+
+}
+
+.title{
+    text-align: center;
+    color: white;
+}
+.flex-box{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.p1{
+    background-image: url('img/34118861_604022379978766_3399869693169762304_n.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.p2{
+    background-image: url('img/36240557_1852452548391270_5818362607861497856_n.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.p3{
+    background-image: url('img/36566520_247171865870602_1289211129125404672_n.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.p4{
+    background-image: url('img/36609952_235964617222950_46732761758695424_n.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.name{
+    justify-content: center;
+    align-items: flex-end;
+    }
+
+.flex-box1{
+    display: flex;
+    flex-flow: column nowrap;
+    height: 300px;
+    width: 230px;
+    align-items: center;
+}
+.line{
+    margin-top: 20px;
+    width: 230px;
+    height: 2px;
+    background-color: white;
+}
+.name{
+    margin-top: 20px;
+    color: white;
+    font-size: 150%;
+    font-family: 'Bree Serif', cursive;
+    }
+    

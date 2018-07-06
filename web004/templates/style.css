@@ -1,0 +1,8 @@
+.text-red {color: red;}
+.upoer-case {text-transform: uppercase;}
+.font-weight-bold {font-weight: bold;}
+#background-ele {background-color: black;
+height:50px;
+width: 50px;
+background-image: url("http://sohanews.sohacdn.com/thumb_w/660/2017/photo-4-1509012560460-0-0-409-660-crop-1509012656515.jpg");
+background-size: cover;}

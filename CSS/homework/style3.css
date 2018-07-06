@@ -1,0 +1,392 @@
+.fartherbox{
+    height: 680px;
+    width: 750px;
+    margin: 0 20%;
+}
+.box1{
+    background-image: url('images/page-logo.png');
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+}
+.box2{
+    display: flex;
+    flex-flow: column;
+    margin-top: 25px;
+    height: 150px;
+    width: 150px;
+}
+.box2-1{
+    display:flex;
+    margin-top:10px;
+}
+.box3{
+    background-image: url('images/icons/nav-tastemakers.png');
+    background-size: cover;
+    height: 20px;
+    width: 20px; 
+    margin-right: 10px;  
+}
+
+.box3-1{
+    background-image: url('images/icons/nav-blog.png');
+    background-size: cover;
+    height: 20px;
+    width: 20px; 
+    margin-right: 10px;  
+}
+.box3-2{
+    background-image: url('images/icons/nav-alist.png');
+    background-size: cover;
+    height: 20px;
+    width: 20px; 
+    margin-right: 10px;  
+}
+.box3-3{
+    background-image: url('images/icons/nav-contribute.png');
+    background-size: cover;
+    height: 20px;
+    width: 20px; 
+    margin-right: 10px;  
+}
+.box3-4{
+    background-image: url('images/icons/nav-about.png');
+    background-size: cover;
+    height: 20px;
+    width: 20px; 
+    margin-right: 10px;  
+}
+.box4{
+    margin-top: 50px; 
+    display: flex;
+    flex-flow: column;
+}
+
+.line1{
+    width: 130px;
+    height: 2px;
+    border-bottom: 1px dashed lightgray;
+}
+.box4-1{
+    display: flex;
+    margin-top:10px;
+    height: 25px;
+    width: 130px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    justify-content: space-around;
+}
+.box4-2{
+    background-image: url('images/icons/icon-twitter.png');
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+}
+.mt-5px{
+    margin-top:10px;
+    font-family: 'Petit Formal Script', cursive;
+}
+.ft-60{
+    font-family: 'Petit Formal Script', cursive;
+    color: rgb(93, 223, 179);
+    font-size: 70%;
+    margin-top:3px;
+}
+.box5{
+    margin-top:40px;
+    display: flex;
+    flex-flow: column;
+    width: 130px;
+}
+.box5-1{
+    display: flex;
+    margin-top:10px;
+    height: 25px;
+    width: 130px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    justify-content: space-around;
+}
+.box5-2{
+    margin-top:2px;
+    background-image: url('images/icons/icon-facebook.png');
+    background-size:cover;
+    height: 20px;
+    width: 20px;
+}
+.d-inline-block{
+    display: inline-block;
+}
+.bigbox1{
+    height: 550px;
+    width: 120px;
+}
+.bigbox2{
+    background-color:white;
+    margin-left:50px;
+    height: 650px;
+    width: 800px;
+}
+.d-flex{
+    display: flex;
+}
+.ft-50{
+    font-size: 65%;
+}
+.box6{
+    height: 350px;
+    width: 720px;
+    background-image: url('images/header.jpg');
+    background-size: cover;
+    display: inline-block;
+}
+.box7{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 40px;
+    width: 190px;
+    margin-top: 220px;
+}
+
+.box8{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 30px;
+    width: 330px;
+}
+.text-white{
+    color: white;
+}
+.fs-75{
+    font-size: 85%;
+}
+.box9{
+    background-color: rgb(160, 235, 208);
+    display: flex;
+    height: 75px;
+    width: 720px;
+}
+.box9-1{
+    display: flex;
+    flex-flow: column;
+    width: 200px;
+    justify-content: center;
+    background-color: rgb(224, 253, 243);
+}
+.fs-80{
+    font-size: 65%;
+    font-family: 'Playball', sans-serif;
+}
+.box9-2{
+    display: flex;
+    flex-flow: column;
+    width: 200px;
+    justify-content: center;
+    background-color: rgb(160, 235, 208);
+    margin-left: 1px;
+}
+.ml-30px{
+    margin-left:30px;
+}
+
+.box9-3{
+    display: flex;
+    flex-flow: column;
+    width: 200px;
+    justify-content: center;
+    background-color: rgb(224, 253, 243);
+    margin-left: 1px;
+}
+.box9-4{
+    display: flex;
+    flex-flow: column;
+    width: 200px;
+    justify-content: center;
+    background-color: rgb(224, 253, 243);
+    margin-left: 1px;
+}
+
+.box10{
+    border-top: 1px dashed lightgray;
+    display: flex;
+    height: 50px;
+    width: 720px;
+    margin-top:25px;
+    border-bottom: 1px dashed lightgray;
+}
+.box10-1{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 50px;
+    width: 500px;
+}
+.box10-11{
+    background-image: url("images/icons/e-mail-icon-62255.png");
+    background-size: cover;
+    background-position: center;
+    height: 30px;
+    width: 50px;
+    margin-right:10px;
+    margin-left:10px;
+}
+.box10-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+    width: 300px;
+}
+.box11{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+    width:720px;
+    
+}
+.box11-1{
+    display: flex;
+    flex-flow: column; 
+    height: 400px;
+    width: 160px;
+}
+
+.box11-11{
+    border: 5px ridge white;
+    background-image: url("images/cookbooks-blog.jpg");
+    background-size: cover;
+    height: 100px;
+    width: 160px;
+    margin-bottom: 10px;
+}
+.box11-2{
+    display: flex;
+    flex-flow: column; 
+    height: 400px;
+    width: 160px;
+}
+.box11-21{
+    border: 5px ridge white;
+    background-image: url("images/potato.jpg");
+    background-size: cover;
+    height: 100px;
+    width: 160px;
+    margin-bottom: 10px;
+    
+}
+.box11-3{
+    display: flex;
+    flex-flow: column; 
+    height: 400px;
+    width: 160px;
+}
+.box11-31{
+    border: 5px ridge white;
+    background-image: url("images/pinterest.jpg");
+    background-size: cover;
+    height: 100px;
+    width: 160px;
+    margin-bottom: 10px;
+}
+.box11-4{
+    display: flex;
+    flex-flow: column; 
+    height: 400px;
+    width: 160px;
+}
+.box11-41{
+    border: 5px ridge white;
+    background-image: url("images/dinner-blog.jpg");
+    background-size: cover;
+    height: 100px;
+    width: 160px;
+    margin-bottom: 10px;
+}
+.mb-10px{
+    margin-bottom: 10px;
+}
+
+.motherbox{
+    margin-top: 150px;
+    height: 50px;
+    width: 900px;
+    margin-left: 20%;
+    border-top: 2px solid lightgray;
+    display: flex;
+    justify-content: space-between;
+}
+.box12{
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    width: 230px;
+}
+.fs-90{
+    font-size: 80%;
+    font-family: 'Quattrocento Sans', sans-serif;
+    color: rgb(68, 204, 159);
+}
+.box13{
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    margin-top:15px;
+
+}
+.box13-1{
+    background-image: url("images/icons/icon-twitter.png");
+    height: 30px;
+    width: 30px;
+    background-size: cover;
+    
+}
+.box13-2{
+    background-image: url("images/icons/icon-facebook.png");
+    height: 30px;
+    width: 30px;
+    background-size: cover;
+}
+.box13-3{
+    background-image: url("images/icons/icon-rss.png");
+    height: 30px;
+    width: 30px;
+    background-size: cover;
+}
+.font1{
+    font-size: 90%;
+    font-family: 'Petit Formal Script', cursive;
+    color: rgb(93, 223, 179);
+}
+
+.font2{
+    font-family: 'Petit Formal Script', cursive;
+    color: rgb(68, 204, 159);
+}
+.font3{
+    font-family: 'Playball', sans-serif;
+    font-size: 80%
+}
+.font4{
+    color: rgb(68, 204, 159);
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+.font5{
+    font-family: 'Quattrocento Sans', sans-serif;
+    color: rgb(187, 187, 187);
+    font-size: 80%;
+}
+.font6{
+    margin-left: 3px;
+    font-family: 'Quattrocento Sans', sans-serif;
+    color: rgb(68, 204, 159);
+    font-size: 80%
+}
+.font7{
+    color: rgb(143, 143, 143);
+}
