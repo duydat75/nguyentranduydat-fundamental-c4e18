@@ -1,0 +1,12 @@
+<div class="bg-beach1">
+    <div class="flex-box4">
+    {% for service in all_service %}
+        <div class="btn flex-box41 font-dancing">
+                <div>Tên: {{service.name}}</div>
+                <div>Năm sinh: {{service.yob}}</div>
+                <div>Chiều cao: {{service.height}}(cm)</div>
+                <a href="{{ url_for('detail', service_id=service.id) }}">Chi tiết</a>
+        </div>
+    {% endfor %}
+    </div>
+</div>

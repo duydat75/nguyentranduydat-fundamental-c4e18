@@ -19,6 +19,6 @@ for i in range (1):
         address=fake.address(),
         description = choice(['Xinh gái','Dáng ngon','Thông minh sắc xảo','Hài hước']),
         measurements = str([randint(85,95),randint(55,65),randint(85,95)]),
-        avatar = 'static/tumblr_pafgtpE6Rj1r2xjmjo2_1280.jpg'   
+        avatar = 'static/36601356_300117887194720_2666822202850017280_o.jpg'   
     )
     new_service.save()

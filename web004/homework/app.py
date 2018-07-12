@@ -132,20 +132,23 @@ def signin():
 
 @app.route('/login', methods=['GET','POST'])
 def login():
-    if request.method == 'GET':
-        return render_template('login.html')
-    elif request.method == 'POST':
-        form = request.form
-        username = form['username']
-        password = form['password']
-        all_user=User.objects()
-        for item in all_user:
-            if username == item['username'] and password == item['password']:
-                session['loggedin'] = True
-                session['user_id'] = str(item.id)
-                return redirect(url_for("search"))
-            else:
-                return "Đăng nhập thất bại"
+    if "loggedin" in session:
+        return "Mày đăng nhập rồi mà"
+    else:
+        if request.method == 'GET':
+            return render_template('login.html')
+        elif request.method == 'POST':
+            form = request.form
+            username = form['username']
+            password = form['password']
+            all_user=User.objects()
+            for item in all_user:
+                if username == item['username'] and password == item['password']:
+                    session['loggedin'] = True
+                    session['user_id'] = str(item.id)
+                    return redirect(url_for("search"))
+                else:
+                    return "Đăng nhập thất bại"
 
 
 

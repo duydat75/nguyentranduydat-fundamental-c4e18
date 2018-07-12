@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Service for detail</title>
+    {% include 'meta-data.html' %}
 </head>
 <body>
-    <img src="../{{service.avatar }} " width="400px" height="400px">
+
+    {% include 'detail/body.html' %}
+    <!-- <img src="../{{service.avatar }} " width="400px" height="400px">
     <br>
     <h2>{{ service.name }}</h2>
     <p>Năm sinh: {{ service.yob }}</p>
@@ -16,6 +19,7 @@
     <p>Địa chỉ: {{ service.address }}</p>
     <p>Mô tả: {{ service.description }}</p>
     <p>Số đo 3 vòng: {{ service.measurements }}</p>
-    <a href="{{url_for('order', service_id = service.id)}}">Yêu cầu dịch vụ</a>
+    <a href="{{url_for('order', service_id = service.id)}}">Yêu cầu dịch vụ</a> -->
+    
 </body>
 </html>

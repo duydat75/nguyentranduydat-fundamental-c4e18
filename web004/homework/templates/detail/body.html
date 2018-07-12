@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="../../static/style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
+            <div class="panel panel-info">
+                <div class="panel-heading bg-primary">
+                    <h3 class="panel-title text-white">{{service.name}}</h3>
+                </div>
+                <div class="panel-body mt-3 mb-3">
+                <div class="row">
+                    <div class="col-md-3 col-lg-3 " align="center"> <img alt="Ảnh đại diện" src="../{{service.avatar}}" class="img-circle img-responsive"> </div>
+                    <div class=" col-md-9 col-lg-9 "> 
+                    <table class="table table-user-information">
+                        <tbody>
+                        <tr>
+                            <td>Năm sinh: {{ service.yob }}</td>
+                        </tr>
+                        <tr>
+                            <td>Cao: {{ service.height }} cm</td>
+                        </tr>
+                        <tr>
+                            <td>Số điện thoại: {{ service.phone }}</td>
+                        </tr>
+                            <td>Địa chỉ: {{ service.address }}<</td>
+                        </tr>
+                        <tr>
+                            <td>Mô tả: {{ service.description }}</td>
+                        </tr>
+                        <tr>
+                            <td>Số đo 3 vòng: {{ service.measurements }}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <a  class="btn btn-dark" href="{{url_for('order', service_id = service.id)}}">Yêu cầu dịch vụ</a>
+                    </div>
+                </div>
+                </div>
+                <div class="panel-footer">
+                    <a data-original-title="Broadcast Message" data-toggle="tooltip" type="button" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-envelope"></i></a>
+                    <span class="pull-right">
+                        <a href="{{url_for('admin')}}" data-original-title="Edit this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-warning"><i class="glyphicon glyphicon-edit"></i></a>
+                        <a data-original-title="Remove this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
+                    </span>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
