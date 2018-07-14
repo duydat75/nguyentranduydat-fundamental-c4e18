@@ -298,8 +298,24 @@
     align-items: center;
     height: 500px;
 }
-.fixed-panel {
+.fixed-panel{
     min-height: 10;
     max-height: 10;
     overflow-y: scroll;
-  }
+}
+.ml-10px{
+    margin-left: 500px;
+}
+.ml-20px{
+    margin-left: 340px;
+}
+
+.tutor-block { background-color: #1a1a1a; padding: 30px; }
+.tutor-content { text-align: center; }
+.tutor-title { margin-bottom: 5px; }
+.tutor-designation { color: #ff3c2e; display: block; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; font-size: 12px; }
+.tutor-img img { width: 100%; margin-bottom: 30px; }
+.social-media { background-color: #292929; padding: 12px; text-align: center; }
+.social-media span { margin-right: 18px; font-size: 20px; font-family: "FontAwesome";}
+.mb60{margin-bottom:60px;}
+.mt30{margin-top:30px;}

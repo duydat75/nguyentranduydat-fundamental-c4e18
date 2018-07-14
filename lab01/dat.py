@@ -1,6 +1,6 @@
 from gmail import *
 from random import choice
-gmail=GMail('nguyenduydat1027@gmail.com','Baolu7853516')
+gmail=GMail('nguyenduydat1027@gmail.com','dat12345678')
 html_content="""
 <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Cộng ho&agrave; x&atilde; hội chủ nghĩa Việt Nam</p>
 <p style="text-align: center;">Độc Lập - Tự Do -Hạnh Ph&uacute;c</p>
@@ -16,7 +16,7 @@ mylist = ['Gãy tay','Gãy cổ','Gãy lưng','Gãy mũi','Gãy móng tay']
 reason = choice(mylist)
 html_content_to_sent = html_content.replace("{{abc}}", reason)
 
-msg=Message('Hello mother fucker',to='20130075@student.hust.edu.vn',
+msg=Message('Hello mother fucker',to='duydat75@gmail.com',
                 html=html_content_to_sent)
 
 gmail.send(msg)
