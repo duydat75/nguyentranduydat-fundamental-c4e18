@@ -25,6 +25,12 @@ def register():
         confirmpassword = form['confirmpassword']
         if fullname == '' or email == '' or username =='' or password =='':
             return render_template('register.html') + "Bạn chưa điền hết các ô"
+        elif ' ' in username or ' ' in password:
+            return render_template('register.html') + "Tài khoản hoặc mật khẩu không được chứa dấu cách"
+        elif not ( 5 < len(username) < 23):
+            return render_template('register.html') + "Tài khoản phải từ 6-22 ký tự"
+        elif not ( 5 < len(password) < 23):
+            return render_template('register.html') + "Password phải từ 6-22 ký tự"
         elif User.objects(username= username):
             return render_template('register.html') + "Tài khoản đã có người sử dụng"
         elif User.objects(email=email):
@@ -58,7 +64,6 @@ def login():
                 all_user = User.objects(username = username)
                 for item in all_user:
                     session['user_id'] = str(item.id)
-                    print (session)
                 return redirect('/')
             else:
                 return "Đăng nhập thất bại"
@@ -68,25 +73,27 @@ def logout():
     del session['loggedin']
     return redirect(url_for('index'))
 
-# @app.route('/changepassword', methods = ['POST','GET'])
-# def changepassword():
-#     if "loggedin" in session:
-#         if request.method == 'GET':
-#             return render_template('changepassword.html')
-#         elif request.method == 'POST':
-#             form = request.form 
-#             password = form['password']
-#             newpassword = form['newpassword']
-#             confirmpassword = form['confirmpassword']
-#             all_user = User.objects.get(id=session['user_id'])
-#             if newpassword == confirmpassword:
-#                 if password == all_user.password:
-#                     all_user.update(password = newpassword)
-#                     return "Thanh cong"
-#                 else:
-#                     return "Mat khau khong dung"
-#             else:
-#                 return 'Hay nhap lai mat khau chinh xac'
+@app.route('/changepassword', methods = ['POST','GET'])
+def changepassword():
+    if "loggedin" not in session:
+        return "Ban hay dang nhap"
+    elif "loggedin" in session:
+        if request.method == 'GET':
+            return render_template('changepassword.html')
+        elif request.method == 'POST':
+            form = request.form 
+            password = form['password']
+            newpassword = form['newpassword']
+            confirmpassword = form['confirmpassword']
+            all_user = User.objects.get(id=session['user_id'])
+            if newpassword == confirmpassword:
+                if password == all_user.password:
+                    all_user.update(password = newpassword)
+                    return "Thanh cong"
+                else:
+                    return "Mat khau khong dung"
+            else:
+                return 'Hay nhap lai mat khau chinh xac'
 
 @app.route('/forgotpassword', methods = ['POST','GET'])
 def forgotpassword():
@@ -104,6 +111,7 @@ def forgotpassword():
             msg=Message('Khôi phục mật khẩu',to=email, html=html_content)
             gmail.send(msg)
             return ('/')
+
 if __name__ == '__main__':
   app.run(debug=True)
  
