@@ -16,7 +16,7 @@ htmldom==2.0
 idna==2.6
 itsdangerous==0.24
 jdcal==1.4
-Jinja2==2.10
+Jinja2==2.11.3
 kiwisolver==1.0.1
 lml==0.0.1
 MarkupSafe==1.0
